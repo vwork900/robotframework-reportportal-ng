@@ -1,2 +1,4 @@
-reportportal-client==3.0.0
-robotframework==3.0.2
+robotframework>=7.0
+robotframework-reportportal>=5.0
+robotframework-seleniumlibrary>=6.0
+reportportal-client>=5.0
