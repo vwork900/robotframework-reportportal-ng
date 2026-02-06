@@ -32,22 +32,27 @@ Pass - True Condition
 
 Fail - Values Not Equal
     [Documentation]    Fail: intentional mismatch for reporting.
+    [Tags]    expected_failure
     Should Be Equal    foo    bar
 
 Fail - Number Mismatch
     [Documentation]    Fail: wrong numeric assertion.
+    [Tags]    expected_failure
     Should Be Equal As Numbers    10    99
 
 Fail - Explicit Fail
     [Documentation]    Fail: explicit failure for Report Portal.
+    [Tags]    expected_failure
     Log    About to fail on purpose.
     Fail    Intentional failure for CI/Report Portal demo.
 
 Fail - String Does Not Contain
     [Documentation]    Fail: substring not in string.
+    [Tags]    expected_failure
     Should Contain    hello    xyz
 
 Fail - Empty Check
     [Documentation]    Fail: list is empty but we expect not empty.
+    [Tags]    expected_failure
     @{empty}=    Create List
     List Should Not Be Empty    ${empty}
