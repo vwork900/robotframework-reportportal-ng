@@ -22,7 +22,7 @@ Pass - String Contains
 Pass - List Not Empty
     [Documentation]    Pass: list has items.
     @{items}=    Create List    a    b    c
-    List Should Not Be Empty    ${items}
+    builtin.Should Not Be Empty    ${items}
     Length Should Be    ${items}    3
 
 Pass - True Condition
